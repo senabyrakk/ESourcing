@@ -1,0 +1,124 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Product",
+      "DownstreamSchema": "http",
+      "DownstreamHostAndPosts": [
+        {
+          "Host": "esourcingproduct",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Product",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/{id}",
+      "DownstreamSchema": "http",
+      "DownstreamHostAndPosts": [
+        {
+          "Host": "esourcingproduct",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Product/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auction",
+      "DownstreamSchema": "http",
+      "DownstreamHostAndPosts": [
+        {
+          "Host": "esourcingproduct",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Auction/{id}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Auction",
+      "DownstreamSchema": "http",
+      "DownstreamHostAndPosts": [
+        {
+          "Host": "esourcingproduct",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Auction/{id}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Auction/CompleteAuction/{id}",
+      "DownstreamSchema": "http",
+      "DownstreamHostAndPosts": [
+        {
+          "Host": "esourcingproduct",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Auction/CompleteAuction/{id}",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Bid",
+      "DownstreamSchema": "http",
+      "DownstreamHostAndPosts": [
+        {
+          "Host": "esourcingproduct",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Bid",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Bid/GetBidsByAuction/{id}",
+      "DownstreamSchema": "http",
+      "DownstreamHostAndPosts": [
+        {
+          "Host": "esourcingproduct",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Bid/GetBidsByAuction/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Bid/GetWinnerBid/{id}",
+      "DownstreamSchema": "http",
+      "DownstreamHostAndPosts": [
+        {
+          "Host": "esourcingproduct",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Bid/GetWinnerBid/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Order/GetOrdersByUserName/{userName}",
+      "DownstreamSchema": "http",
+      "DownstreamHostAndPosts": [
+        {
+          "Host": "esourcingproduct",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Bid/GetOrdersByUserName/{userName}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Order",
+      "DownstreamSchema": "http",
+      "DownstreamHostAndPosts": [
+        {
+          "Host": "esourcingproduct",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Order",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}
